@@ -1,6 +1,6 @@
 import React,{PureComponent} from 'react';
 import { Button } from 'antd';
-import './Home.css';
+import './Home.less';
 import * as listAction from '../../components/List/ListRedux';
 
 import fetch from '../../fetch';
