@@ -1,4 +1,18 @@
 
+
+使用
+
+npm install -g yarn
+
+yarn install
+
+yarn start
+
+cd mock
+
+yarn run mock
+
+
 1：数据请求
 fetch( url, this.props.action, object );
 
@@ -20,6 +34,9 @@ connect( Home, ['home','nav'], {...listAction} );  ##多页面数据调用；
 ##避免需要用到其他页面的数据；建议全局共用数据在开一个二级数据；
 
 
+3.组件调用会简化成：import { List， Buts, } from 'components';
 
-之后会更新组件调用会简化成：import { List， Buts, } from 'components';
+记得得先将组件在components里的index.js中先导出;
+
+
 后续.........
