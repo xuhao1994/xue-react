@@ -6,6 +6,8 @@ import * as listAction from '../../components/List/ListRedux';
 import fetch from '../../fetch';
 import connect from '../../redux/connect';
 
+import {List} from 'components';
+
 
 class Home extends PureComponent{
 
@@ -17,6 +19,7 @@ class Home extends PureComponent{
     return(
       <div className='home'>
         Home
+        <List/>
         <Button type="primary">Button</Button>
       </div>
     )
