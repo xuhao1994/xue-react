@@ -1,7 +1,7 @@
 import React,{PureComponent} from 'react';
 import { Button } from 'antd';
 import './Home.less';
-import * as listAction from '../../components/List/ListRedux';
+import {listActions} from './HomeRedux.js';
 
 import fetch from '../../fetch';
 import connect from '../../redux/connect';
@@ -26,4 +26,4 @@ class Home extends PureComponent{
   }
 }
 
-export default connect(Home,'hone',{...listAction});
+export default connect(Home,'hone',{...listActions});
